@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(./Norse-Bold.otf);
+}
+body {
+  display: flex;
+  margin: 0;
+}
+
+.left {
+  background: url(./halie-west-25xggax4bSA-unsplash.jpg) no-repeat center;
+  height: 100vh;
+  width: 30vw;
+  background-size: cover;
+}
+
+.left > div {
+  color: white;
+  font-family: "Norse Bold", sans-serif;
+  font-size: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+  position: relative;
+  top: 100px;
+}
+
+.left > div > img {
+  width: 1em;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 70vw;
+
+  background-color: whitesmoke;
+}
+
+.right > div:first-child,
+.right > div:nth-child(2) h2 {
+  font: 600 1rem sans-serif;
+}
+
+.right > div:first-child {
+  padding-inline: 2rem;
+}
+
+.right form > div > div {
+  display: flex;
+  gap: 3rem;
+}
+
+.input-elements > div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  padding-inline: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[name="pwd"] {
+  display: block;
+}
+
+.danger {
+  color: red;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+}
+
+input:focus {
+  border: 1.5px solid blue;
+}
+
+input[type="password"]:invalid {
+  border: 1.5px solid red;
+}
+
+.right > div:nth-child(2) > form > div {
+  background-color: white;
+  box-shadow: 0 1px 1px rgb(229, 229, 229);
+  padding: 1rem 2rem;
+}
+
+.right button,
+.right > div:last-child > p {
+  margin-inline-start: 2rem;
+  margin-block-start: 2rem;
+}
+
+.right button {
+  background-color: #596d48;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+}
+
+.right > div:last-child > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.right > div:last-child > p > a {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: 600;
+}

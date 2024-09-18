@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="left">
+      <div>
+        <img src="./assets/odin-lined.png" alt="" />
+        <p>ODIN</p>
+      </div>
+    </div>
+    <div class="right">
+      <div>
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div>
+        <form action="#" method="get">
+          <div>
+            <h2>Let's do this!</h2>
+            <div>
+              <div class="input-elements">
+                <div>
+                  <label for="first_name">First Name</label>
+                  <input
+                    type="text"
+                    name="fname"
+                    id="first_name"
+                    minlength="5"
+                    maxlength="10"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <div>
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="pwd"
+                    id="password"
+                    minlength="8"
+                    required
+                  />
+                  <span class="danger">* Passwords do not match</span>
+                </div>
+              </div>
+              <div class="input-elements">
+                <div>
+                  <label for="last_name">Last Name</label>
+                  <input
+                    type="text"
+                    name="lname"
+                    id="last_name"
+                    minlength="5"
+                    maxlength="10"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="phone_number">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="pnumber"
+                    id="phone_number"
+                    maxlength="12"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="confirm_password">Confirm Password</label>
+                  <input
+                    type="password"
+                    name="conf_pwd"
+                    id="confirm_password"
+                    minlength="8"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
